@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    box-sizing: content-box;
+}
+
+/*HEADER NAV*/
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(245, 233, 16);
+    width: auto;
+    border-bottom: 1.5px solid black;
+    margin-bottom: 0px;
+}
+
+nav img{
+    width: 180px;
+    height: auto;
+    margin-top: auto;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav i{
+    color: rgb(0, 0, 0);
+    font-size: 17.5px;
+    margin: auto;
+    margin-left: 6px;
+    margin-right: 10px; 
+    cursor: pointer;
+}
+
+
+.fa-user{
+    background-color: #001b84;
+    color: rgb(255, 255, 255);
+    padding: 7px;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+}
+
+.fa-user:hover{
+    background-color: white;
+    color: #000000;
+
+}
+
+/*********************************/
+
+/*PRODUCTO*/
+main{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.518624641833811) 0%, rgb(245, 233, 16) 60%);
+    margin-top: 0px;
+}
+
+.alineacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.caja1, .caja2 {
+    width: 45%;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(97, 97, 97);
+    transition-duration: 0.5s;
+}
+.caja2:hover{
+    transform: scale(1.05);
+}
+.caja1:hover{
+    transform: scale(1.05);
+}
+
+
+img{
+    width: 200px;
+    margin-top: 10%;
+}
+
+h3{
+    background-color: #3483FA;
+    color: white;
+    text-align: center;
+    width: 60%;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+h4{
+    color: rgb(72, 71, 71);
+    font-weight: 100;
+}
+.descuento{
+    color: #00A650;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+.oferta{
+    text-decoration: line-through;
+    color: rgb(139, 140, 141);
+    font-size: 15px;
+}
+
+.precio{
+    font-size: 23px;
+    margin-top: 5px;
+    font-weight: 800;
+}
+
+h5{
+    color: #00A650;
+    font-size: 15px;
+}
+
+i{
+    color: #3483FA;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.estrella-texto{
+    font-size: 13px;
+}
+
+.verde{
+    color:  #00A650;
+}
+
+
+
+@media screen and (max-width: 970px) {
+    .alineacion{
+        display: flex;
+        flex-direction:column ;
+        align-items: center;
+    }
+    .caja1, .caja2{
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .caja1{
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width:570px) {
+
+    nav img{
+        display: none;
+    }
+
+
+
+    .caja1, .caja2{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+.aside1{
+    box-shadow:0 0 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 40px;
+    margin: auto;
+    margin-left: 50px ;
+    margin-right:50px ;
+    overflow: hidden;
+}
+
+.titulo-aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(60, 0, 255);
+    background: linear-gradient(93deg, rgb(244, 0, 248) 49%, rgb(32, 6, 103) 96%);
+}
+
+h6{
+    font-size: 20px;
+    color: white;
+    margin: 20px;
+}
+
+button{
+    width: auto;
+    padding: 4px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px ;
+    color: #fff;
+    background-color: #ffffff7b; 
+    transition-duration: .6s;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+#promos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+}
+
+.aside1 p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.aside1 #promos img{
+    width: 80px;
+    margin: 20px 0px 20px 20px;
+    box-shadow: 0 0 10px grey;
+
+}
+
+#span-disney{
+    margin-right:200px ;
+}
+
+@media screen and (max-width: 670px) {
+    #promos{
+        flex-direction: column;
+        margin-bottom: 15px;
+        }
+    span{
+        margin: auto;
+    }
+    
+}
+
